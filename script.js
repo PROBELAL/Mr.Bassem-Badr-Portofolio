@@ -4,15 +4,23 @@ const navLinks=document.querySelector('.nav-links')
 menuIcon.onclick=()=>{
     navLinks.classList.toggle('active');
 }
-function whatsupform(){
-    let num="+20 1094752357"
-    let name=document.getElementById('name').value;
-    let phone=document.getElementById('phone').value;
-    let address=document.getElementById('address').value;
-    let choise=document.getElementById('on-off').value;
-    var url="https://wa.me/"+num+"?text="
-    +"الاسم: "+name+"%0a"
-    +"العنوان: "+address+"%0a"
-    +"نوع الحجز: "+choise+"%0a%0a";
-    window.open(url,'_blank').focus();
+function whatsupform() {
+    
+    let num = "+20 1094752357"; 
+    
+    let name = document.getElementById('name').value;
+    let phone = document.getElementById('phone').value;
+    let address = document.getElementById('address').value;
+    let choise = document.getElementById('on-off').value;
+    
+    
+    let message = "الاسم: " + name + "\n"
+                + "رقم التليفون: " + phone + "\n"
+                + "العنوان: " + address + "\n"
+                + "نوع الحجز: " + choise;
+
+    
+    let url = "https://wa.me/" + num + "?text=" + encodeURIComponent(message);
+    
+    window.open(url, '_blank').focus();
 }
