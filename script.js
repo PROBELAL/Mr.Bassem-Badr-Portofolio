@@ -11,8 +11,8 @@ function whatsupform(){
     let address=document.getElementById('address').value;
     let choise=document.getElementById('on-off').value;
     var url="https://wa.me/"+num+"?text="
-    +"Name: "+name+"%0a"
-    +"Address: "+address+"%0a"
-    +"choise: "+choise+"%0a%0a";
+    +"الاسم: "+name+"%0a"
+    +"العنوان: "+address+"%0a"
+    +"نوع الحجز: "+choise+"%0a%0a";
     window.open(url,'_blank').focus();
 }
