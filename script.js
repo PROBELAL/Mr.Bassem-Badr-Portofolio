@@ -6,7 +6,7 @@ menuIcon.onclick=()=>{
 }
 function whatsupform() {
     
-    let num = "01110078274"; 
+    let num = "201094752357"; 
     
     let name = document.getElementById('name').value;
     let phone = document.getElementById('phone').value;
